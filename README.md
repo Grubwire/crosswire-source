@@ -1,6 +1,6 @@
-# Crosswire — corresponding source
+# Crosswire Source Code
 
-This repository is the **corresponding source** for Crosswire, a macOS app for
+This repository is the Source Code for Crosswire, a macOS app for
 running Windows software, published by Grubwire. It is provided to meet the
 GPL-3.0 / LGPL-2.1 source-availability obligations for the binaries distributed
 at [grubwire.io](https://grubwire.io).
