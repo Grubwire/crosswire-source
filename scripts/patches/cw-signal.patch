@@ -1,0 +1,193 @@
+diff --git a/dlls/ntdll/unix/signal_x86_64.c b/dlls/ntdll/unix/signal_x86_64.c
+index a42be94..eb534aa 100644
+--- a/dlls/ntdll/unix/signal_x86_64.c
++++ b/dlls/ntdll/unix/signal_x86_64.c
+@@ -89,6 +89,15 @@ WINE_DECLARE_DEBUG_CHANNEL(seh);
+ 
+ #include "dwarf.h"
+ 
++#ifdef __APPLE__
++/* CW Hack 24256 */
++#include <sys/sysctl.h>
++static BOOL is_rosetta2;
++
++/* CW Hack 23427 */
++static BOOL sequoia_or_later = FALSE;
++#endif
++
+ static USHORT cs32_sel;  /* selector for %cs in 32-bit mode */
+ static USHORT cs64_sel;  /* selector for %cs in 64-bit mode */
+ static USHORT ds64_sel;  /* selector for %ds/%es/%ss in 64-bit mode */
+@@ -895,6 +904,15 @@ static void save_context( struct thread_data *data, struct xcontext *xcontext,
+ 
+         context->ContextFlags |= CONTEXT_FLOATING_POINT;
+         memcpy( &context->FltSave, FPU_sig(sigcontext), sizeof(context->FltSave) );
++#ifdef __APPLE__
++        /* CW Hack 24256 (read side, ported from CrossOver's LGPL-2.1 Wine fork):
++           mxcsr in signal contexts is incorrect under Rosetta. The live register
++           value read here in-handler is correct, whereas the sigcontext copy is
++           stale; without this, threads suspended via usr1_handler (JIT safepoints)
++           resume with a bad mxcsr and crash (0xc0000409) once the JIT is enabled. */
++        if (is_rosetta2)
++            __asm__ volatile( "stmxcsr %0" : "=m" (context->FltSave.MxCsr) );
++#endif
+         context->MxCsr = context->FltSave.MxCsr;
+         if (xstate_extended_features && (xs = XState_sig(FPU_sig(sigcontext))))
+         {
+@@ -1043,8 +1061,12 @@ NTSTATUS WINAPI NtSetContextThread( HANDLE handle, const CONTEXT *context )
+     {
+         ret = set_thread_context( handle, context, &self, IMAGE_FILE_MACHINE_AMD64 );
+ #ifdef __APPLE__
++        /* CW HACK 22131 */
+         if ((flags & CONTEXT_DEBUG_REGISTERS) && (ret == STATUS_UNSUCCESSFUL))
+-            WARN_(seh)( "Setting debug registers is not supported under Rosetta\n" );
++        {
++            WARN_(seh)( "Setting debug registers is not supported under Rosetta, faking success\n" );
++            ret = STATUS_SUCCESS;
++        }
+ #endif
+         if (ret || !self) return ret;
+         if (flags & CONTEXT_DEBUG_REGISTERS)
+@@ -1275,6 +1297,14 @@ NTSTATUS set_thread_wow64_context( HANDLE handle, const void *ctx, ULONG size )
+     if (!self)
+     {
+         NTSTATUS ret = set_thread_context( handle, context, &self, IMAGE_FILE_MACHINE_I386 );
++#ifdef __APPLE__
++        /* CW HACK 22131 */
++        if ((flags & CONTEXT_I386_DEBUG_REGISTERS) && (ret == STATUS_UNSUCCESSFUL))
++        {
++            WARN_(seh)( "Setting debug registers is not supported under Rosetta, faking success\n" );
++            ret = STATUS_SUCCESS;
++        }
++#endif
+         if (ret || !self) return ret;
+         if (flags & CONTEXT_I386_DEBUG_REGISTERS)
+         {
+@@ -1810,6 +1840,40 @@ NTSTATUS WINAPI NtCallbackReturn( void *ret_ptr, ULONG ret_len, NTSTATUS status
+ }
+ 
+ 
++
++#ifdef __APPLE__
++/***********************************************************************
++ *           emulate_xgetbv
++ *
++ * Check if the fault location is an Intel XGETBV instruction for xcr0 and
++ * emulate it if so. Actual Intel hardware supports this instruction, so this
++ * will only take effect under Rosetta.
++ * CW HACK 23427
++ */
++static inline BOOL emulate_xgetbv( ucontext_t *sigcontext, CONTEXT *context )
++{
++    BYTE instr[3];
++    unsigned int len = virtual_uninterrupted_read_memory( (BYTE *)context->Rip, instr, sizeof(instr) );
++
++    /* Prefixed xgetbv is illegal, so no need to check. */
++    if (len < 3 || instr[0] != 0x0f || instr[1] != 0x01 || instr[2] != 0xd0 ||
++        (RCX_sig(sigcontext) & 0xffffffff) != 0 /* only handling xcr0 (ecx==0) */)
++    {
++        return FALSE;
++    }
++
++    RDX_sig(sigcontext) = 0;
++    if (sequoia_or_later)
++        RAX_sig(sigcontext) = 0xe7;  /* fpu/mmx, sse, avx, full avx-512 */
++    else
++        RAX_sig(sigcontext) = 0x07;  /* fpu/mmx, sse */
++
++    RIP_sig(sigcontext) += 3;
++    TRACE_(seh)( "emulated an XGETBV instruction\n" );
++    return TRUE;
++}
++#endif
++
+ /***********************************************************************
+  *           is_privileged_instr
+  *
+@@ -2292,6 +2356,10 @@ static void segv_handler( int signal, siginfo_t *siginfo, void *_sigcontext )
+         rec.ExceptionCode = EXCEPTION_ARRAY_BOUNDS_EXCEEDED;
+         break;
+     case TRAP_x86_PRIVINFLT:   /* Invalid opcode exception */
++#ifdef __APPLE__
++        /* CW HACK 23427 */
++        if (emulate_xgetbv( sigcontext, &context.c )) return;
++#endif
+         rec.ExceptionCode = EXCEPTION_ILLEGAL_INSTRUCTION;
+         break;
+     case TRAP_x86_STKFLT:  /* Stack fault */
+@@ -2592,6 +2660,23 @@ static void usr1_handler( int signal, siginfo_t *siginfo, void *_sigcontext )
+ 
+ 
+ #if defined(__APPLE__) || defined(__linux__)
++#ifdef __APPLE__
++/* CW Hack 24265 (ported from CrossOver's LGPL-2.1 Wine fork,
++ * dlls/ntdll/unix/signal_x86_64.c). On Apple Silicon under Rosetta the mxcsr
++ * value carried in the syscall-entry sigcontext can be stale/corrupt and
++ * Rosetta ignores direct writes to it, so sigsys_handler stashes the correct
++ * value in amd64_thread_data()->mxcsr and redirects RIP here; this thunk
++ * reloads it before falling into the dispatcher prolog. The thread-data layout
++ * (teb at %gs:0x30, mxcsr at +0x33c) is identical in our engine, so the asm
++ * ports verbatim. */
++extern void __restore_mxcsr_thunk(void);
++__ASM_GLOBAL_FUNC( __restore_mxcsr_thunk,
++                   "pushq %rcx\n\t"
++                   "movq %gs:0x30,%rcx\n\t"
++                   "ldmxcsr 0x33c(%rcx)\n\t"  /* amd64_thread_data()->mxcsr */
++                   "popq %rcx\n\t"
++                   "jmp " __ASM_LOCAL_LABEL("__wine_syscall_dispatcher_prolog_end") )
++#endif
+ /**********************************************************************
+  *		sigsys_handler
+  *
+@@ -2629,6 +2714,28 @@ static void sigsys_handler( int signal, siginfo_t *siginfo, void *_sigcontext )
+         frame->restore_flags |= CONTEXT_CONTROL;
+     }
+     RIP_sig(sigcontext) = (ULONG64)__wine_syscall_dispatcher_prolog_end_ptr;
++#ifdef __APPLE__
++    /* CW Hack 24265 (ported from CrossOver's LGPL-2.1 Wine fork). Under Rosetta
++     * the mxcsr in the sigcontext can be wrong on syscall entry; correct it, and
++     * because Rosetta on M-series will reload the stale sigcontext value anyway,
++     * stash the right value in amd64_thread_data()->mxcsr and redirect into the
++     * thunk above, which reloads it before entering the dispatcher prolog. */
++    if (is_rosetta2 && FPU_sig(sigcontext))
++    {
++        XMM_SAVE_AREA32 fpu;
++        unsigned int direct_mxcsr;
++
++        __asm__ volatile( "stmxcsr %0" : "=m" (direct_mxcsr) );
++        memcpy( &fpu, FPU_sig(sigcontext), sizeof(fpu) );
++        if (direct_mxcsr != fpu.MxCsr)
++        {
++            fpu.MxCsr = direct_mxcsr;
++            memcpy( FPU_sig(sigcontext), &fpu, sizeof(fpu) );
++            amd64_thread_data( data )->mxcsr = direct_mxcsr;
++            RIP_sig(sigcontext) = (ULONG64)__restore_mxcsr_thunk;
++        }
++    }
++#endif
+ }
+ #endif
+ 
+@@ -2812,6 +2919,22 @@ void signal_init_process( TEB *teb )
+     alloc_syscall_frame( (frame_size + 63) & ~63 );
+     signal_alloc_thread( teb );
+ 
++#ifdef __APPLE__
++    /* CW Hack 24256: sysctl[byname] is not signal-safe; cache here. */
++    {
++        int ret = 0;
++        size_t size = sizeof(ret);
++        if (sysctlbyname( "sysctl.proc_translated", &ret, &size, NULL, 0 ) == -1)
++            is_rosetta2 = 0;
++        else
++            is_rosetta2 = ret;
++    }
++
++    /* CW Hack 23427: __builtin_available presumably isn't signal-safe. */
++    if (__builtin_available( macOS 15.0, * ))
++        sequoia_or_later = TRUE;
++#endif
++
+     sig_act.sa_mask = server_block_set;
+     sig_act.sa_flags = SA_SIGINFO | SA_RESTART | SA_ONSTACK;
+ 
