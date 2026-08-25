@@ -1,0 +1,1291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0173DF862FC6ADF00043FD8C /* Bottle+RegistryUninstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173DF852FC6ADF00043FD8C /* Bottle+RegistryUninstall.swift */; };
+		0173DF972FC6BDE80043FD8C /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 0173DF962FC6BDE80043FD8C /* AppIcon.icon */; };
+		043C288FF84EC6FCC36868AE /* UninstallTier2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F691D707F617ECC9EEE96BDF /* UninstallTier2View.swift */; };
+		08CCC895375F401EF067E0F5 /* LibraryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07ECB93D0516526159F57A /* LibraryGrid.swift */; };
+		0F85596667324331537E8D81 /* DetectedRuntimesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15E81B81388F5818CF6A5E8 /* DetectedRuntimesSheet.swift */; };
+		10B488492E29C934B380ED64 /* FailureWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E69279487E2EC21976BBA /* FailureWatcher.swift */; };
+		132D3EB89D22EB42DCBD7034 /* CrosswireControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE8A2AEE32B9A4100AB35C /* CrosswireControls.swift */; };
+		147FDC26E02D357AE585242A /* AppearancePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284A83C42C60433694A7AB8E /* AppearancePicker.swift */; };
+		15993F723EC1E52E4AA96671 /* InlineSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A758CDD06FEDF58136816 /* InlineSettingsView.swift */; };
+		218E910C444F3EC61A70F3C2 /* LibrarySearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE596AE80A140D4AE56F911C /* LibrarySearchField.swift */; };
+		2511713A265D76F19751A347 /* LibraryViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97A7467268707A6E8E1E9C /* LibraryViewMode.swift */; };
+		330DAC98479337B9E1F5BBC1 /* EntryDetailAdvancedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F4BBE12521FF5C35E3604A /* EntryDetailAdvancedSection.swift */; };
+		36C37A041521C9341FB5CB40 /* RuntimePresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283F836592E92926EB66C02 /* RuntimePresets.swift */; };
+		3A87274EBFE3A91646C33D34 /* GameTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F16ED7449EF857751027E88 /* GameTile.swift */; };
+		403488A0CC23AF82040F6A5F /* CrosswireApp+Uninstall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17847C43F6A027DCFE611254 /* CrosswireApp+Uninstall.swift */; };
+		41E4481FA77D4D93E01A6EC6 /* FailureReportBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A47AEC3C6282D015BB8500 /* FailureReportBuilder.swift */; };
+		5E47A170000000000000C003 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 5E47A170000000000000C002 /* Sentry */; };
+		5E47A170000000000000D002 /* CrosswireUpdaterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47A170000000000000D001 /* CrosswireUpdaterDelegate.swift */; };
+		5E47A170000000000000D004 /* SettingsUpdatesGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47A170000000000000D003 /* SettingsUpdatesGroup.swift */; };
+		5E47A170000000000000D006 /* CrosswireTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47A170000000000000D005 /* CrosswireTelemetry.swift */; };
+		6169089994B0C03DFFCF1508 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61CAB73D21A331D0F4EC7C6 /* EntryDetailView.swift */; };
+		6365C4C12B1AA69D00AAE1FD /* Animation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365C4C02B1AA69D00AAE1FD /* Animation+Extensions.swift */; };
+		6763D8F62BC6314100651D27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6763D8F52BC6314100651D27 /* Constants.swift */; };
+		6E064B1229DD32A200D9A2D2 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 6E064B1129DD32A200D9A2D2 /* Sparkle */; };
+		6E064B1429DD331F00D9A2D2 /* SparkleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E064B1329DD331F00D9A2D2 /* SparkleView.swift */; };
+		6E2FB15E2B589A7800E344C6 /* cabextract in Embed CrosswireCmd */ = {isa = PBXBuildFile; fileRef = 6E2FB15D2B589A7800E344C6 /* cabextract */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6E40495629CCA19C006E3F1B /* CrosswireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40495529CCA19C006E3F1B /* CrosswireApp.swift */; };
+		6E40495829CCA19C006E3F1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40495729CCA19C006E3F1B /* ContentView.swift */; };
+		6E40495A29CCA19C006E3F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E40495929CCA19C006E3F1B /* Assets.xcassets */; };
+		6E40495D29CCA19C006E3F1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E40495C29CCA19C006E3F1B /* Preview Assets.xcassets */; };
+		6E40498329CCA91B006E3F1B /* Bottle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40498229CCA91B006E3F1B /* Bottle+Extensions.swift */; };
+		6E50D98329CD6066008C39F6 /* BottleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E50D98229CD6066008C39F6 /* BottleVM.swift */; };
+		6E59676B2A9A424900D64F70 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6E59676A2A9A424900D64F70 /* ArgumentParser */; };
+		6E5B61B62AC34E6D007B1913 /* SemanticVersion in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5B61B52AC34E6D007B1913 /* SemanticVersion */; };
+		6E621CEF2A5F631300C9AAB3 /* Winetricks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E621CEE2A5F631200C9AAB3 /* Winetricks.swift */; };
+		6E6C0CF22A419A6800356232 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C0CF12A419A6800356232 /* WelcomeView.swift */; };
+		6E6C0CF42A419A7600356232 /* RosettaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C0CF32A419A7600356232 /* RosettaView.swift */; };
+		6E6C0CF62A419A8300356232 /* EngineSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C0CF52A419A8300356232 /* EngineSetupView.swift */; };
+		6E70A49B2A9A2197007799E9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E70A49A2A9A2197007799E9 /* Main.swift */; };
+		6E70A4A12A9A280C007799E9 /* CrosswireCmd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E70A4A02A9A280C007799E9 /* CrosswireCmd.swift */; };
+		6E7C07BE2AAE7B0100F6E66B /* ProgramShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C07BD2AAE7B0100F6E66B /* ProgramShortcut.swift */; };
+		6E7C07C02AAF570100F6E66B /* FileOpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7C07BF2AAF570100F6E66B /* FileOpenView.swift */; };
+		6E95F66D2AB3EF3A00D585D1 /* CrosswireCmd in Embed CrosswireCmd */ = {isa = PBXBuildFile; fileRef = 6E70A4982A9A2197007799E9 /* CrosswireCmd */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6E95F6702AB3F33C00D585D1 /* SwiftyTextTable in Frameworks */ = {isa = PBXBuildFile; productRef = 6E95F66F2AB3F33C00D585D1 /* SwiftyTextTable */; };
+		6E95F6732AB3F67200D585D1 /* Progress in Frameworks */ = {isa = PBXBuildFile; productRef = 6E95F6722AB3F67200D585D1 /* Progress */; };
+		6EAA110000000000CAFE0001 /* winetricks in Embed CrosswireCmd */ = {isa = PBXBuildFile; fileRef = 6EAA110000000000CAFE0002 /* winetricks */; };
+		6EB58AC92AEACE5E00B1ED3F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6EB58AC82AEACE5E00B1ED3F /* Localizable.xcstrings */; };
+		6EF557982A410599001A4F09 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF557972A410599001A4F09 /* SetupView.swift */; };
+		6EFDF64C2AAE2DA800EF622F /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFDF64B2AAE2DA800EF622F /* QuickLookThumbnailing.framework */; };
+		6EFDF64E2AAE2DA800EF622F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFDF64D2AAE2DA800EF622F /* Quartz.framework */; };
+		6EFDF6512AAE2DA800EF622F /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDF6502AAE2DA800EF622F /* ThumbnailProvider.swift */; };
+		6EFDF6562AAE2DA800EF622F /* CrosswireThumbnail.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6EFDF64A2AAE2DA800EF622F /* CrosswireThumbnail.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6EFDF6662AAE303300EF622F /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFDF6652AAE303300EF622F /* Icons.xcassets */; };
+		6F93D87A735B8AE4C19470FD /* CommonRuntimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A050DC9787835284BB2BEB /* CommonRuntimesView.swift */; };
+		7B62BEB7665E12DD579B9F28 /* JavaAppDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED3F1691D908D479B3A905B /* JavaAppDetector.swift */; };
+		873A035A47949642D3AAB139 /* TileArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE041E185C843A02B7A1B0 /* TileArtView.swift */; };
+		D8C84409EAB71E4DDF449B74 /* BannerArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B31FAC23C6D4A3E4B8384F8 /* BannerArt.swift */; };
+		8C2AEFC82AED79B700CB568F /* CrosswireKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2AEFC72AED79B700CB568F /* CrosswireKit */; };
+		8C2AEFCA2AED79CD00CB568F /* CrosswireKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2AEFC92AED79CD00CB568F /* CrosswireKit */; };
+		8CB681E52AED7C6F0018D319 /* CrosswireKit in Resources */ = {isa = PBXBuildFile; fileRef = 8CB681E42AED7C6F0018D319 /* CrosswireKit */; };
+		8CB681E72AED7CD00018D319 /* CrosswireKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB681E62AED7CD00018D319 /* CrosswireKit */; };
+		97C0E3509F0F36CBF7B8190C /* RuntimesPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F0588ED6FEB4510C02034F /* RuntimesPrompt.swift */; };
+		9A8BCEF97BBC16B5554312DC /* HeroArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E494B5F2B95B12C8E33802 /* HeroArtView.swift */; };
+		DF8B26D7B22B42A594DC6D0D /* BottleDetailContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE95F79001433EBAE85BFB /* BottleDetailContent.swift */; };
+		A213342FC4E1C2C87FF67BB9 /* AppearanceStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3308EB1AFF133AD575B6250 /* AppearanceStepView.swift */; };
+		A912C7219F3209C71CFC1CD8 /* CrosswireLauncherTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B873E39D67F22B62E175864B /* CrosswireLauncherTheme.swift */; };
+		AB120001000000000000AAA1 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB120002000000000000AAA2 /* AboutView.swift */; };
+		AB120003000000000000AAA3 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB120004000000000000AAA4 /* DiagnosticsView.swift */; };
+		AB300013000000000000AA03 /* AppTileIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300003000000000000AA03 /* AppTileIcon.swift */; };
+		AB300014000000000000AA04 /* ContentView+Install.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300004000000000000AA04 /* ContentView+Install.swift */; };
+		B5146557DD1CBDFF18B1CBE1 /* BottleActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861C7EA333EE6EE1E74B221 /* BottleActions.swift */; };
+		B7B363DB4CEAF672EF76E64B /* BottleRenameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FA1603083DF4AAE0A42C59 /* BottleRenameField.swift */; };
+		BC4C71D4D0C1343A6BE84556 /* LibrarySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B195858355AF1473B21B21FB /* LibrarySelection.swift */; };
+		BF94F92C907D1641E6FC34C8 /* AppearancePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79FFA62C8DCBF1990D7995A /* AppearancePreference.swift */; };
+		BFD1B92A22E31C8F79451104 /* CrosswireTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF165E670ADF3E17956342 /* CrosswireTheme.swift */; };
+		DAE73012A5640BA64AEA8033 /* LibraryContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC287AA7702F7BC847BBE2 /* LibraryContainerView.swift */; };
+		DC1FECBC9FE4F3A4AEEFA73A /* ProgramPickerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E76E80B6964FFF8D7A61C5A /* ProgramPickerList.swift */; };
+		DD95C6AB9988AEA5E8DB655B /* Bottle+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87751B87252FC0C20973483 /* Bottle+Display.swift */; };
+		E8A5601E839B0840E1C1BE56 /* LibraryDetailPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097907B6BECAB690D4ED478 /* LibraryDetailPane.swift */; };
+		EB58FB552A499896002DC184 /* SemanticVersion in Frameworks */ = {isa = PBXBuildFile; productRef = EB58FB542A499896002DC184 /* SemanticVersion */; };
+		EEA5A2462A31DD65008274AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA5A2452A31DD65008274AE /* AppDelegate.swift */; };
+		EF1BE38B67B1F79F44B2B398 /* LibraryRail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14649A5D21B29FBBEC0D76B /* LibraryRail.swift */; };
+		F5D1440FD1100E974FDE5C91 /* LibraryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76C7774D1E976F0226A05F /* LibraryRow.swift */; };
+		F636BBD874EAFC984BACB076 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355CF7BE3A777C29AD86FCAD /* GuideView.swift */; };
+		FEEE7329ECC0B7DC86638FB4 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB38B94618F3DE070F13E7 /* AppRoute.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EFDF6542AAE2DA800EF622F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E40494A29CCA19C006E3F1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFDF6492AAE2DA800EF622F;
+			remoteInfo = CrosswireThumbnail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E70A4962A9A2197007799E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6E95F66C2AB3EF2F00D585D1 /* Embed CrosswireCmd */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				6E2FB15E2B589A7800E344C6 /* cabextract in Embed CrosswireCmd */,
+				6EAA110000000000CAFE0001 /* winetricks in Embed CrosswireCmd */,
+				6E95F66D2AB3EF3A00D585D1 /* CrosswireCmd in Embed CrosswireCmd */,
+			);
+			name = "Embed CrosswireCmd";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFDF65A2AAE2DA800EF622F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6EFDF6562AAE2DA800EF622F /* CrosswireThumbnail.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0173DF852FC6ADF00043FD8C /* Bottle+RegistryUninstall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bottle+RegistryUninstall.swift"; sourceTree = "<group>"; };
+		0173DF962FC6BDE80043FD8C /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		05FA1603083DF4AAE0A42C59 /* BottleRenameField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottleRenameField.swift; sourceTree = "<group>"; };
+		0FBC287AA7702F7BC847BBE2 /* LibraryContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryContainerView.swift; sourceTree = "<group>"; };
+		17847C43F6A027DCFE611254 /* CrosswireApp+Uninstall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CrosswireApp+Uninstall.swift"; sourceTree = "<group>"; };
+		18A050DC9787835284BB2BEB /* CommonRuntimesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CommonRuntimesView.swift; sourceTree = "<group>"; };
+		284A83C42C60433694A7AB8E /* AppearancePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppearancePicker.swift; sourceTree = "<group>"; };
+		355CF7BE3A777C29AD86FCAD /* GuideView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		3C1A758CDD06FEDF58136816 /* InlineSettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InlineSettingsView.swift; sourceTree = "<group>"; };
+		48DF165E670ADF3E17956342 /* CrosswireTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CrosswireTheme.swift; sourceTree = "<group>"; };
+		5E47A170000000000000D001 /* CrosswireUpdaterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswireUpdaterDelegate.swift; sourceTree = "<group>"; };
+		5E47A170000000000000D003 /* SettingsUpdatesGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUpdatesGroup.swift; sourceTree = "<group>"; };
+		5E47A170000000000000D005 /* CrosswireTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswireTelemetry.swift; sourceTree = "<group>"; };
+		5F16ED7449EF857751027E88 /* GameTile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameTile.swift; sourceTree = "<group>"; };
+		6365C4C02B1AA69D00AAE1FD /* Animation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Extensions.swift"; sourceTree = "<group>"; };
+		6763D8F52BC6314100651D27 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6E064B1329DD331F00D9A2D2 /* SparkleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleView.swift; sourceTree = "<group>"; };
+		6E2FB15D2B589A7800E344C6 /* cabextract */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cabextract; sourceTree = "<group>"; };
+		6E40495229CCA19C006E3F1B /* Crosswire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crosswire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E40495529CCA19C006E3F1B /* CrosswireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswireApp.swift; sourceTree = "<group>"; };
+		6E40495729CCA19C006E3F1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E40495929CCA19C006E3F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E40495C29CCA19C006E3F1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E40498229CCA91B006E3F1B /* Bottle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bottle+Extensions.swift"; sourceTree = "<group>"; };
+		6E50D98229CD6066008C39F6 /* BottleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleVM.swift; sourceTree = "<group>"; };
+		6E621CEE2A5F631200C9AAB3 /* Winetricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winetricks.swift; sourceTree = "<group>"; };
+		6E6C0CF12A419A6800356232 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6E6C0CF32A419A7600356232 /* RosettaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosettaView.swift; sourceTree = "<group>"; };
+		6E6C0CF52A419A8300356232 /* EngineSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineSetupView.swift; sourceTree = "<group>"; };
+		6E70A4982A9A2197007799E9 /* CrosswireCmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CrosswireCmd; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E70A49A2A9A2197007799E9 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		6E70A4A02A9A280C007799E9 /* CrosswireCmd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswireCmd.swift; sourceTree = "<group>"; };
+		6E7C07BD2AAE7B0100F6E66B /* ProgramShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramShortcut.swift; sourceTree = "<group>"; };
+		6E7C07BF2AAF570100F6E66B /* FileOpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpenView.swift; sourceTree = "<group>"; };
+		6E899D1129CFC41D00A4A083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6EAA110000000000CAFE0002 /* winetricks */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = winetricks; sourceTree = "<group>"; };
+		6EB58AC82AEACE5E00B1ED3F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6EF557972A410599001A4F09 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		6EFDF64A2AAE2DA800EF622F /* CrosswireThumbnail.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CrosswireThumbnail.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EFDF64B2AAE2DA800EF622F /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		6EFDF64D2AAE2DA800EF622F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		6EFDF6502AAE2DA800EF622F /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		6EFDF6522AAE2DA800EF622F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EFDF6532AAE2DA800EF622F /* CrosswireThumbnail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrosswireThumbnail.entitlements; sourceTree = "<group>"; };
+		6EFDF6652AAE303300EF622F /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		7283F836592E92926EB66C02 /* RuntimePresets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RuntimePresets.swift; sourceTree = "<group>"; };
+		77F0588ED6FEB4510C02034F /* RuntimesPrompt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RuntimesPrompt.swift; sourceTree = "<group>"; };
+		8BAE8A2AEE32B9A4100AB35C /* CrosswireControls.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CrosswireControls.swift; sourceTree = "<group>"; };
+		8CB681E42AED7C6F0018D319 /* CrosswireKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CrosswireKit; sourceTree = "<group>"; };
+		8E76E80B6964FFF8D7A61C5A /* ProgramPickerList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProgramPickerList.swift; sourceTree = "<group>"; };
+		A1A47AEC3C6282D015BB8500 /* FailureReportBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FailureReportBuilder.swift; sourceTree = "<group>"; };
+		A87751B87252FC0C20973483 /* Bottle+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bottle+Display.swift"; sourceTree = "<group>"; };
+		A90E69279487E2EC21976BBA /* FailureWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FailureWatcher.swift; sourceTree = "<group>"; };
+		AB120002000000000000AAA2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		AB120004000000000000AAA4 /* DiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsView.swift; sourceTree = "<group>"; };
+		AB300003000000000000AA03 /* AppTileIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTileIcon.swift; sourceTree = "<group>"; };
+		AB300004000000000000AA04 /* ContentView+Install.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+Install.swift"; sourceTree = "<group>"; };
+		B14649A5D21B29FBBEC0D76B /* LibraryRail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryRail.swift; sourceTree = "<group>"; };
+		B195858355AF1473B21B21FB /* LibrarySelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibrarySelection.swift; sourceTree = "<group>"; };
+		B79FFA62C8DCBF1990D7995A /* AppearancePreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppearancePreference.swift; sourceTree = "<group>"; };
+		B873E39D67F22B62E175864B /* CrosswireLauncherTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CrosswireLauncherTheme.swift; sourceTree = "<group>"; };
+		BB97A7467268707A6E8E1E9C /* LibraryViewMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryViewMode.swift; sourceTree = "<group>"; };
+		C61CAB73D21A331D0F4EC7C6 /* EntryDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
+		CA76C7774D1E976F0226A05F /* LibraryRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryRow.swift; sourceTree = "<group>"; };
+		CCDB38B94618F3DE070F13E7 /* AppRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		CE596AE80A140D4AE56F911C /* LibrarySearchField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibrarySearchField.swift; sourceTree = "<group>"; };
+		CED3F1691D908D479B3A905B /* JavaAppDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JavaAppDetector.swift; sourceTree = "<group>"; };
+		D097907B6BECAB690D4ED478 /* LibraryDetailPane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryDetailPane.swift; sourceTree = "<group>"; };
+		D15E81B81388F5818CF6A5E8 /* DetectedRuntimesSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetectedRuntimesSheet.swift; sourceTree = "<group>"; };
+		D3308EB1AFF133AD575B6250 /* AppearanceStepView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppearanceStepView.swift; sourceTree = "<group>"; };
+		E4CE041E185C843A02B7A1B0 /* TileArtView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TileArtView.swift; sourceTree = "<group>"; };
+		6B31FAC23C6D4A3E4B8384F8 /* BannerArt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BannerArt.swift; sourceTree = "<group>"; };
+		EEA5A2452A31DD65008274AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4E494B5F2B95B12C8E33802 /* HeroArtView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeroArtView.swift; sourceTree = "<group>"; };
+		FABE95F79001433EBAE85BFB /* BottleDetailContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottleDetailContent.swift; sourceTree = "<group>"; };
+		F691D707F617ECC9EEE96BDF /* UninstallTier2View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UninstallTier2View.swift; sourceTree = "<group>"; };
+		F861C7EA333EE6EE1E74B221 /* BottleActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottleActions.swift; sourceTree = "<group>"; };
+		F9F4BBE12521FF5C35E3604A /* EntryDetailAdvancedSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EntryDetailAdvancedSection.swift; sourceTree = "<group>"; };
+		FC07ECB93D0516526159F57A /* LibraryGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LibraryGrid.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E40494F29CCA19C006E3F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2AEFC82AED79B700CB568F /* CrosswireKit in Frameworks */,
+				5E47A170000000000000C003 /* Sentry in Frameworks */,
+				6E064B1229DD32A200D9A2D2 /* Sparkle in Frameworks */,
+				EB58FB552A499896002DC184 /* SemanticVersion in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E70A4952A9A2197007799E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C2AEFCA2AED79CD00CB568F /* CrosswireKit in Frameworks */,
+				6E95F6732AB3F67200D585D1 /* Progress in Frameworks */,
+				6E5B61B62AC34E6D007B1913 /* SemanticVersion in Frameworks */,
+				6E95F6702AB3F33C00D585D1 /* SwiftyTextTable in Frameworks */,
+				6E59676B2A9A424900D64F70 /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFDF6472AAE2DA800EF622F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB681E72AED7CD00018D319 /* CrosswireKit in Frameworks */,
+				6EFDF64C2AAE2DA800EF622F /* QuickLookThumbnailing.framework in Frameworks */,
+				6EFDF64E2AAE2DA800EF622F /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6365C4BF2B1AA69500AAE1FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E40498229CCA91B006E3F1B /* Bottle+Extensions.swift */,
+				6365C4C02B1AA69D00AAE1FD /* Animation+Extensions.swift */,
+				0173DF852FC6ADF00043FD8C /* Bottle+RegistryUninstall.swift */,
+				A87751B87252FC0C20973483 /* Bottle+Display.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63FFDE822ADEFADF00178665 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6E17B6422AF3FD6E00831173 /* Pins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pins;
+			sourceTree = "<group>";
+		};
+		6E17B6472AF3FE2E00831173 /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		6E2FB15F2B589A9000E344C6 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6E2FB15D2B589A7800E344C6 /* cabextract */,
+				6EAA110000000000CAFE0002 /* winetricks */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		6E355E5629D78202002D83BE /* Bottle */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B6422AF3FD6E00831173 /* Pins */,
+				18A050DC9787835284BB2BEB /* CommonRuntimesView.swift */,
+				D15E81B81388F5818CF6A5E8 /* DetectedRuntimesSheet.swift */,
+			);
+			path = Bottle;
+			sourceTree = "<group>";
+		};
+		6E40494929CCA19C006E3F1B = {
+			isa = PBXGroup;
+			children = (
+				6E40495429CCA19C006E3F1B /* Crosswire */,
+				6E70A4992A9A2197007799E9 /* CrosswireCmd */,
+				6EFDF64F2AAE2DA800EF622F /* CrosswireThumbnail */,
+				8CB681E42AED7C6F0018D319 /* CrosswireKit */,
+				6E2FB15F2B589A9000E344C6 /* Libraries */,
+				6E40495329CCA19C006E3F1B /* Products */,
+				6E5967692A9A424900D64F70 /* Frameworks */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		6E40495329CCA19C006E3F1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E40495229CCA19C006E3F1B /* Crosswire.app */,
+				6E70A4982A9A2197007799E9 /* CrosswireCmd */,
+				6EFDF64A2AAE2DA800EF622F /* CrosswireThumbnail.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E40495429CCA19C006E3F1B /* Crosswire */ = {
+			isa = PBXGroup;
+			children = (
+				0173DF962FC6BDE80043FD8C /* AppIcon.icon */,
+				EEA5A2452A31DD65008274AE /* AppDelegate.swift */,
+				6365C4BF2B1AA69500AAE1FD /* Extensions */,
+				6E5197D029D7200700CF655E /* Utils */,
+				6E5197CE29D71FE800CF655E /* View Models */,
+				6E5197CD29D71FCD00CF655E /* Views */,
+				6E40495929CCA19C006E3F1B /* Assets.xcassets */,
+				6E899D1129CFC41D00A4A083 /* Info.plist */,
+				6E40495B29CCA19C006E3F1B /* Preview Content */,
+				6EB58AC82AEACE5E00B1ED3F /* Localizable.xcstrings */,
+				7F392A9926897FF3A43D36D0 /* Theme */,
+			);
+			path = Crosswire;
+			sourceTree = "<group>";
+		};
+		6E40495B29CCA19C006E3F1B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6E40495C29CCA19C006E3F1B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E49E01F2AECB7D000009CAC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3C1A758CDD06FEDF58136816 /* InlineSettingsView.swift */,
+				5E47A170000000000000D003 /* SettingsUpdatesGroup.swift */,
+				284A83C42C60433694A7AB8E /* AppearancePicker.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6E5197CD29D71FCD00CF655E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB120005000000000000AAA5 /* About */,
+				63FFDE822ADEFADF00178665 /* Common */,
+				6E49E01F2AECB7D000009CAC /* Settings */,
+				6E6C0CF02A419A5800356232 /* Setup */,
+				6E17B6472AF3FE2E00831173 /* Programs */,
+				6E355E5629D78202002D83BE /* Bottle */,
+				6E40495529CCA19C006E3F1B /* CrosswireApp.swift */,
+				6E40495729CCA19C006E3F1B /* ContentView.swift */,
+				5E47A170000000000000D001 /* CrosswireUpdaterDelegate.swift */,
+				5E47A170000000000000D005 /* CrosswireTelemetry.swift */,
+				AB300003000000000000AA03 /* AppTileIcon.swift */,
+				AB300004000000000000AA04 /* ContentView+Install.swift */,
+				6E064B1329DD331F00D9A2D2 /* SparkleView.swift */,
+				6E7C07BF2AAF570100F6E66B /* FileOpenView.swift */,
+				CCDB38B94618F3DE070F13E7 /* AppRoute.swift */,
+				C61CAB73D21A331D0F4EC7C6 /* EntryDetailView.swift */,
+				8BAE8A2AEE32B9A4100AB35C /* CrosswireControls.swift */,
+				F691D707F617ECC9EEE96BDF /* UninstallTier2View.swift */,
+				17847C43F6A027DCFE611254 /* CrosswireApp+Uninstall.swift */,
+				D2181A3FC937C096931F70B4 /* Library */,
+				F9F4BBE12521FF5C35E3604A /* EntryDetailAdvancedSection.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E5197CE29D71FE800CF655E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E50D98229CD6066008C39F6 /* BottleVM.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		6E5197D029D7200700CF655E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6E621CEE2A5F631200C9AAB3 /* Winetricks.swift */,
+				6E70A4A02A9A280C007799E9 /* CrosswireCmd.swift */,
+				6E7C07BD2AAE7B0100F6E66B /* ProgramShortcut.swift */,
+				6763D8F52BC6314100651D27 /* Constants.swift */,
+				7283F836592E92926EB66C02 /* RuntimePresets.swift */,
+				A90E69279487E2EC21976BBA /* FailureWatcher.swift */,
+				A1A47AEC3C6282D015BB8500 /* FailureReportBuilder.swift */,
+				77F0588ED6FEB4510C02034F /* RuntimesPrompt.swift */,
+				CED3F1691D908D479B3A905B /* JavaAppDetector.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6E5967692A9A424900D64F70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EFDF64B2AAE2DA800EF622F /* QuickLookThumbnailing.framework */,
+				6EFDF64D2AAE2DA800EF622F /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E6C0CF02A419A5800356232 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				6EF557972A410599001A4F09 /* SetupView.swift */,
+				6E6C0CF12A419A6800356232 /* WelcomeView.swift */,
+				6E6C0CF32A419A7600356232 /* RosettaView.swift */,
+				6E6C0CF52A419A8300356232 /* EngineSetupView.swift */,
+				D3308EB1AFF133AD575B6250 /* AppearanceStepView.swift */,
+				355CF7BE3A777C29AD86FCAD /* GuideView.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		6E70A4992A9A2197007799E9 /* CrosswireCmd */ = {
+			isa = PBXGroup;
+			children = (
+				6E70A49A2A9A2197007799E9 /* Main.swift */,
+			);
+			path = CrosswireCmd;
+			sourceTree = "<group>";
+		};
+		6EFDF64F2AAE2DA800EF622F /* CrosswireThumbnail */ = {
+			isa = PBXGroup;
+			children = (
+				6EFDF6502AAE2DA800EF622F /* ThumbnailProvider.swift */,
+				6EFDF6522AAE2DA800EF622F /* Info.plist */,
+				6EFDF6532AAE2DA800EF622F /* CrosswireThumbnail.entitlements */,
+				6EFDF6652AAE303300EF622F /* Icons.xcassets */,
+			);
+			path = CrosswireThumbnail;
+			sourceTree = "<group>";
+		};
+		7F392A9926897FF3A43D36D0 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				48DF165E670ADF3E17956342 /* CrosswireTheme.swift */,
+				B873E39D67F22B62E175864B /* CrosswireLauncherTheme.swift */,
+				B79FFA62C8DCBF1990D7995A /* AppearancePreference.swift */,
+			);
+			name = Theme;
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AB120005000000000000AAA5 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				AB120002000000000000AAA2 /* AboutView.swift */,
+				AB120004000000000000AAA4 /* DiagnosticsView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		D2181A3FC937C096931F70B4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				05FA1603083DF4AAE0A42C59 /* BottleRenameField.swift */,
+				E4CE041E185C843A02B7A1B0 /* TileArtView.swift */,
+				6B31FAC23C6D4A3E4B8384F8 /* BannerArt.swift */,
+				F861C7EA333EE6EE1E74B221 /* BottleActions.swift */,
+				5F16ED7449EF857751027E88 /* GameTile.swift */,
+				8E76E80B6964FFF8D7A61C5A /* ProgramPickerList.swift */,
+				FC07ECB93D0516526159F57A /* LibraryGrid.swift */,
+				B195858355AF1473B21B21FB /* LibrarySelection.swift */,
+				CA76C7774D1E976F0226A05F /* LibraryRow.swift */,
+				B14649A5D21B29FBBEC0D76B /* LibraryRail.swift */,
+				F4E494B5F2B95B12C8E33802 /* HeroArtView.swift */,
+				FABE95F79001433EBAE85BFB /* BottleDetailContent.swift */,
+				D097907B6BECAB690D4ED478 /* LibraryDetailPane.swift */,
+				CE596AE80A140D4AE56F911C /* LibrarySearchField.swift */,
+				BB97A7467268707A6E8E1E9C /* LibraryViewMode.swift */,
+				0FBC287AA7702F7BC847BBE2 /* LibraryContainerView.swift */,
+			);
+			name = Library;
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E40495129CCA19C006E3F1B /* Crosswire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E40497729CCA19D006E3F1B /* Build configuration list for PBXNativeTarget "Crosswire" */;
+			buildPhases = (
+				6E40494E29CCA19C006E3F1B /* Sources */,
+				6E40494F29CCA19C006E3F1B /* Frameworks */,
+				6E40495029CCA19C006E3F1B /* Resources */,
+				6E50D98129CD0EAF008C39F6 /* SwiftLint */,
+				6E95F66C2AB3EF2F00D585D1 /* Embed CrosswireCmd */,
+				6EFDF65A2AAE2DA800EF622F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EFDF6552AAE2DA800EF622F /* PBXTargetDependency */,
+			);
+			name = Crosswire;
+			packageProductDependencies = (
+				6E064B1129DD32A200D9A2D2 /* Sparkle */,
+				5E47A170000000000000C002 /* Sentry */,
+				EB58FB542A499896002DC184 /* SemanticVersion */,
+				8C2AEFC72AED79B700CB568F /* CrosswireKit */,
+			);
+			productName = Crosswire;
+			productReference = 6E40495229CCA19C006E3F1B /* Crosswire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E70A4972A9A2197007799E9 /* CrosswireCmd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E70A49E2A9A2197007799E9 /* Build configuration list for PBXNativeTarget "CrosswireCmd" */;
+			buildPhases = (
+				6E70A4942A9A2197007799E9 /* Sources */,
+				6E70A4952A9A2197007799E9 /* Frameworks */,
+				6E70A4962A9A2197007799E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrosswireCmd;
+			packageProductDependencies = (
+				6E59676A2A9A424900D64F70 /* ArgumentParser */,
+				6E95F66F2AB3F33C00D585D1 /* SwiftyTextTable */,
+				6E95F6722AB3F67200D585D1 /* Progress */,
+				6E5B61B52AC34E6D007B1913 /* SemanticVersion */,
+				8C2AEFC92AED79CD00CB568F /* CrosswireKit */,
+			);
+			productName = CrosswireCmd;
+			productReference = 6E70A4982A9A2197007799E9 /* CrosswireCmd */;
+			productType = "com.apple.product-type.tool";
+		};
+		6EFDF6492AAE2DA800EF622F /* CrosswireThumbnail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EFDF6572AAE2DA800EF622F /* Build configuration list for PBXNativeTarget "CrosswireThumbnail" */;
+			buildPhases = (
+				6EFDF6462AAE2DA800EF622F /* Sources */,
+				6EFDF6472AAE2DA800EF622F /* Frameworks */,
+				6EFDF6482AAE2DA800EF622F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrosswireThumbnail;
+			packageProductDependencies = (
+				8CB681E62AED7CD00018D319 /* CrosswireKit */,
+			);
+			productName = CrosswireThumbnail;
+			productReference = 6EFDF64A2AAE2DA800EF622F /* CrosswireThumbnail.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E40494A29CCA19C006E3F1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					6E40495129CCA19C006E3F1B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6E70A4972A9A2197007799E9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					6EFDF6492AAE2DA800EF622F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 6E40494D29CCA19C006E3F1B /* Build configuration list for PBXProject "Crosswire" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				es,
+				pl,
+				ru,
+				uk,
+				"zh-Hans",
+				"zh-Hant",
+				de,
+				ko,
+				fi,
+				ja,
+				"pt-PT",
+				tr,
+				it,
+				nl,
+				vi,
+				da,
+				"pt-BR",
+				ro,
+				cs,
+				ar,
+			);
+			mainGroup = 6E40494929CCA19C006E3F1B;
+			packageReferences = (
+				6E064B1029DD32A200D9A2D2 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				5E47A170000000000000C001 /* XCLocalSwiftPackageReference "SentryBinary" */,
+				EB58FB532A499896002DC184 /* XCRemoteSwiftPackageReference "SemanticVersion" */,
+				6E5967682A9A421800D64F70 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				6E95F66E2AB3F33C00D585D1 /* XCRemoteSwiftPackageReference "SwiftyTextTable" */,
+				6E95F6712AB3F67200D585D1 /* XCRemoteSwiftPackageReference "Progress.swift" */,
+				8C2AEFC62AED79B700CB568F /* XCLocalSwiftPackageReference "CrosswireKit" */,
+			);
+			productRefGroup = 6E40495329CCA19C006E3F1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E40495129CCA19C006E3F1B /* Crosswire */,
+				6E70A4972A9A2197007799E9 /* CrosswireCmd */,
+				6EFDF6492AAE2DA800EF622F /* CrosswireThumbnail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E40495029CCA19C006E3F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CB681E52AED7C6F0018D319 /* CrosswireKit in Resources */,
+				6E40495D29CCA19C006E3F1B /* Preview Assets.xcassets in Resources */,
+				6EB58AC92AEACE5E00B1ED3F /* Localizable.xcstrings in Resources */,
+				6E40495A29CCA19C006E3F1B /* Assets.xcassets in Resources */,
+				0173DF972FC6BDE80043FD8C /* AppIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFDF6482AAE2DA800EF622F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFDF6662AAE303300EF622F /* Icons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E50D98129CD0EAF008C39F6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n    echo \"Running SwiftLint\"\n    swiftlint --strict\nelse\n    echo \"error: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    exit -1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E40494E29CCA19C006E3F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA5A2462A31DD65008274AE /* AppDelegate.swift in Sources */,
+				0173DF862FC6ADF00043FD8C /* Bottle+RegistryUninstall.swift in Sources */,
+				6763D8F62BC6314100651D27 /* Constants.swift in Sources */,
+				6E70A4A12A9A280C007799E9 /* CrosswireCmd.swift in Sources */,
+				6E40495829CCA19C006E3F1B /* ContentView.swift in Sources */,
+				5E47A170000000000000D002 /* CrosswireUpdaterDelegate.swift in Sources */,
+				5E47A170000000000000D006 /* CrosswireTelemetry.swift in Sources */,
+				AB300013000000000000AA03 /* AppTileIcon.swift in Sources */,
+				AB300014000000000000AA04 /* ContentView+Install.swift in Sources */,
+				6EF557982A410599001A4F09 /* SetupView.swift in Sources */,
+				6E7C07BE2AAE7B0100F6E66B /* ProgramShortcut.swift in Sources */,
+				6E6C0CF62A419A8300356232 /* EngineSetupView.swift in Sources */,
+				6E6C0CF42A419A7600356232 /* RosettaView.swift in Sources */,
+				6365C4C12B1AA69D00AAE1FD /* Animation+Extensions.swift in Sources */,
+				6E40498329CCA91B006E3F1B /* Bottle+Extensions.swift in Sources */,
+				6E621CEF2A5F631300C9AAB3 /* Winetricks.swift in Sources */,
+				6E064B1429DD331F00D9A2D2 /* SparkleView.swift in Sources */,
+				6E40495629CCA19C006E3F1B /* CrosswireApp.swift in Sources */,
+				6E50D98329CD6066008C39F6 /* BottleVM.swift in Sources */,
+				6E7C07C02AAF570100F6E66B /* FileOpenView.swift in Sources */,
+				6E6C0CF22A419A6800356232 /* WelcomeView.swift in Sources */,
+				AB120001000000000000AAA1 /* AboutView.swift in Sources */,
+				AB120003000000000000AAA3 /* DiagnosticsView.swift in Sources */,
+				36C37A041521C9341FB5CB40 /* RuntimePresets.swift in Sources */,
+				6F93D87A735B8AE4C19470FD /* CommonRuntimesView.swift in Sources */,
+				10B488492E29C934B380ED64 /* FailureWatcher.swift in Sources */,
+				41E4481FA77D4D93E01A6EC6 /* FailureReportBuilder.swift in Sources */,
+				97C0E3509F0F36CBF7B8190C /* RuntimesPrompt.swift in Sources */,
+				0F85596667324331537E8D81 /* DetectedRuntimesSheet.swift in Sources */,
+				7B62BEB7665E12DD579B9F28 /* JavaAppDetector.swift in Sources */,
+				BFD1B92A22E31C8F79451104 /* CrosswireTheme.swift in Sources */,
+				FEEE7329ECC0B7DC86638FB4 /* AppRoute.swift in Sources */,
+				15993F723EC1E52E4AA96671 /* InlineSettingsView.swift in Sources */,
+				5E47A170000000000000D004 /* SettingsUpdatesGroup.swift in Sources */,
+				6169089994B0C03DFFCF1508 /* EntryDetailView.swift in Sources */,
+				132D3EB89D22EB42DCBD7034 /* CrosswireControls.swift in Sources */,
+				043C288FF84EC6FCC36868AE /* UninstallTier2View.swift in Sources */,
+				403488A0CC23AF82040F6A5F /* CrosswireApp+Uninstall.swift in Sources */,
+				A912C7219F3209C71CFC1CD8 /* CrosswireLauncherTheme.swift in Sources */,
+				BF94F92C907D1641E6FC34C8 /* AppearancePreference.swift in Sources */,
+				147FDC26E02D357AE585242A /* AppearancePicker.swift in Sources */,
+				A213342FC4E1C2C87FF67BB9 /* AppearanceStepView.swift in Sources */,
+				F636BBD874EAFC984BACB076 /* GuideView.swift in Sources */,
+				DD95C6AB9988AEA5E8DB655B /* Bottle+Display.swift in Sources */,
+				B7B363DB4CEAF672EF76E64B /* BottleRenameField.swift in Sources */,
+				330DAC98479337B9E1F5BBC1 /* EntryDetailAdvancedSection.swift in Sources */,
+				873A035A47949642D3AAB139 /* TileArtView.swift in Sources */,
+				D8C84409EAB71E4DDF449B74 /* BannerArt.swift in Sources */,
+				B5146557DD1CBDFF18B1CBE1 /* BottleActions.swift in Sources */,
+				3A87274EBFE3A91646C33D34 /* GameTile.swift in Sources */,
+				DC1FECBC9FE4F3A4AEEFA73A /* ProgramPickerList.swift in Sources */,
+				08CCC895375F401EF067E0F5 /* LibraryGrid.swift in Sources */,
+				BC4C71D4D0C1343A6BE84556 /* LibrarySelection.swift in Sources */,
+				F5D1440FD1100E974FDE5C91 /* LibraryRow.swift in Sources */,
+				EF1BE38B67B1F79F44B2B398 /* LibraryRail.swift in Sources */,
+				9A8BCEF97BBC16B5554312DC /* HeroArtView.swift in Sources */,
+				DF8B26D7B22B42A594DC6D0D /* BottleDetailContent.swift in Sources */,
+				E8A5601E839B0840E1C1BE56 /* LibraryDetailPane.swift in Sources */,
+				218E910C444F3EC61A70F3C2 /* LibrarySearchField.swift in Sources */,
+				2511713A265D76F19751A347 /* LibraryViewMode.swift in Sources */,
+				DAE73012A5640BA64AEA8033 /* LibraryContainerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E70A4942A9A2197007799E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E70A49B2A9A2197007799E9 /* Main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EFDF6462AAE2DA800EF622F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFDF6512AAE2DA800EF622F /* ThumbnailProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EFDF6552AAE2DA800EF622F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFDF6492AAE2DA800EF622F /* CrosswireThumbnail */;
+			targetProxy = 6EFDF6542AAE2DA800EF622F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E40497529CCA19D006E3F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = N53HX5ARLU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E40497629CCA19D006E3F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = N53HX5ARLU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6E40497829CCA19D006E3F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = Crosswire/Crosswire.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 70;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Crosswire/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Crosswire/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Crosswire;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Crosswire needs to access Terminal to launch processes in a Terminal window.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "A Windows application is trying to access the camera.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright - Crosswire - 2026";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A Windows application is trying to access the microphone.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = "1.1.14-beta1";
+				PRODUCT_BUNDLE_IDENTIFIER = app.Crosswire.Crosswire;
+				PRODUCT_NAME = Crosswire;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		6E40497929CCA19D006E3F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_ENTITLEMENTS = Crosswire/Crosswire.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 70;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Crosswire/Preview Content\"";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Crosswire/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Crosswire;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Crosswire needs to access Terminal to launch processes in a Terminal window.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "A Windows application is trying to access the camera.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright - Crosswire - 2026";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A Windows application is trying to access the microphone.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = "1.1.14-beta1";
+				PRODUCT_BUNDLE_IDENTIFIER = app.Crosswire.Crosswire;
+				PRODUCT_NAME = Crosswire;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6E70A49C2A9A2197007799E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_PKGINFO_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.Crosswire.CrosswireCmd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		6E70A49D2A9A2197007799E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_PKGINFO_FILE = NO;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.Crosswire.CrosswireCmd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6EFDF6582AAE2DA800EF622F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = CrosswireThumbnail/CrosswireThumbnail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 70;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrosswireThumbnail/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CrosswireThumbnail;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "1.1.14-beta1";
+				PRODUCT_BUNDLE_IDENTIFIER = app.Crosswire.Crosswire.CrosswireThumbnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		6EFDF6592AAE2DA800EF622F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = CrosswireThumbnail/CrosswireThumbnail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 70;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrosswireThumbnail/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CrosswireThumbnail;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "1.1.14-beta1";
+				PRODUCT_BUNDLE_IDENTIFIER = app.Crosswire.Crosswire.CrosswireThumbnail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E40494D29CCA19C006E3F1B /* Build configuration list for PBXProject "Crosswire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E40497529CCA19D006E3F1B /* Debug */,
+				6E40497629CCA19D006E3F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E40497729CCA19D006E3F1B /* Build configuration list for PBXNativeTarget "Crosswire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E40497829CCA19D006E3F1B /* Debug */,
+				6E40497929CCA19D006E3F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E70A49E2A9A2197007799E9 /* Build configuration list for PBXNativeTarget "CrosswireCmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E70A49C2A9A2197007799E9 /* Debug */,
+				6E70A49D2A9A2197007799E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EFDF6572AAE2DA800EF622F /* Build configuration list for PBXNativeTarget "CrosswireThumbnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EFDF6582AAE2DA800EF622F /* Debug */,
+				6EFDF6592AAE2DA800EF622F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5E47A170000000000000C001 /* XCLocalSwiftPackageReference "SentryBinary" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/SentryBinary;
+		};
+		8C2AEFC62AED79B700CB568F /* XCLocalSwiftPackageReference "CrosswireKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CrosswireKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E064B1029DD32A200D9A2D2 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.2;
+			};
+		};
+		6E5967682A9A421800D64F70 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.3;
+			};
+		};
+		6E95F66E2AB3F33C00D585D1 /* XCRemoteSwiftPackageReference "SwiftyTextTable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scottrhoyt/SwiftyTextTable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		6E95F6712AB3F67200D585D1 /* XCRemoteSwiftPackageReference "Progress.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jkandzi/Progress.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		EB58FB532A499896002DC184 /* XCRemoteSwiftPackageReference "SemanticVersion" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftPackageIndex/SemanticVersion";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E47A170000000000000C002 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E47A170000000000000C001 /* XCLocalSwiftPackageReference "SentryBinary" */;
+			productName = Sentry;
+		};
+		6E064B1129DD32A200D9A2D2 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E064B1029DD32A200D9A2D2 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		6E59676A2A9A424900D64F70 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5967682A9A421800D64F70 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		6E5B61B52AC34E6D007B1913 /* SemanticVersion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB58FB532A499896002DC184 /* XCRemoteSwiftPackageReference "SemanticVersion" */;
+			productName = SemanticVersion;
+		};
+		6E95F66F2AB3F33C00D585D1 /* SwiftyTextTable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E95F66E2AB3F33C00D585D1 /* XCRemoteSwiftPackageReference "SwiftyTextTable" */;
+			productName = SwiftyTextTable;
+		};
+		6E95F6722AB3F67200D585D1 /* Progress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E95F6712AB3F67200D585D1 /* XCRemoteSwiftPackageReference "Progress.swift" */;
+			productName = Progress;
+		};
+		8C2AEFC72AED79B700CB568F /* CrosswireKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CrosswireKit;
+		};
+		8C2AEFC92AED79CD00CB568F /* CrosswireKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C2AEFC62AED79B700CB568F /* XCLocalSwiftPackageReference "CrosswireKit" */;
+			productName = CrosswireKit;
+		};
+		8CB681E62AED7CD00018D319 /* CrosswireKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CrosswireKit;
+		};
+		EB58FB542A499896002DC184 /* SemanticVersion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB58FB532A499896002DC184 /* XCRemoteSwiftPackageReference "SemanticVersion" */;
+			productName = SemanticVersion;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6E40494A29CCA19C006E3F1B /* Project object */;
+}
