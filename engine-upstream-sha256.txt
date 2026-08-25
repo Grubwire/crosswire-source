@@ -1,0 +1,10 @@
+# SHA-256 of the upstream Gcenx macOS_Wine_builds .tar.xz asset bundled per tag.
+# Format: <gcenx-tag>=<sha256>
+#
+# engine-bundle.yml verifies the downloaded archive against the pinned value and
+# FAILS on mismatch — defending against a same-size payload substitution that the
+# TLS + GitHub-API-size check alone wouldn't catch. When bundling a tag with no
+# entry here, the workflow warns and logs the observed SHA so it can be recorded
+# (the same deliberate, human-in-the-loop step as updating engine-version.txt).
+11.9=8729601835659814de4c284d33a234a90da50913fa6e6fca260f90e0b2ba8bb2
+11.10=940bdd1a177872020be01c5c33917cb8eecc1cc3193ad554914fb6efd90d7889
