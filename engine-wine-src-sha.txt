@@ -1,0 +1,12 @@
+# HEAD commit SHA of Gcenx/wine at each release tag (for the winemac.so rebuild).
+# Format: <gcenx-tag>=<commit-sha>
+#
+# engine-bundle.yml verifies the cloned source HEAD against this pinned value
+# and FAILS on mismatch — defending against a silent force-push to the tag that
+# would substitute different source under the same tag name.
+# When bundling a tag with no entry here, the workflow warns and logs the actual
+# SHA so it can be recorded (same deliberate human-in-the-loop step as
+# engine-upstream-sha256.txt). The master fallback cannot be pinned by design.
+11.9=0c0d26432084c18213d5c4b343f10939d25eee2c
+11.10=2cac6ccf33c0807f374dc96f5a20e35a2da86157
+11.13=6eb2e4c32cc9e271856146df11ed3a5c2cf29234

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Crosswire</title>
+        <link>https://github.com/grubwire/Crosswire</link>
+        <description>Crosswire changelog</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.1.14-beta2</title>
+            <pubDate>Wed, 26 Aug 2026 00:39:31 GMT</pubDate>
+            <sparkle:version>71</sparkle:version>
+            <sparkle:shortVersionString>1.1.14-beta2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.14-beta2</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.14-beta2.dmg" sparkle:edSignature="aq+VQNRgx1BoPcSpqjnmOV3jvCHn8XmDbTMHzrk/OQHmIKNQPSI0UjahZV1GmstpU0oY0rMhS/I9Lj7rsaYjCg==" length="343068769" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.14-beta1</title>
+            <pubDate>Tue, 25 Aug 2026 19:04:22 GMT</pubDate>
+            <sparkle:version>70</sparkle:version>
+            <sparkle:shortVersionString>1.1.14-beta1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.14-beta1</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.14-beta1.dmg" sparkle:edSignature="2aEm+N4u9SR9LGIRzlM6yOPXb2KYBoj/fles41J/lJxNtmz4E7l+cnVPxlAeImJjesFKNiFkGlXilcs9puc1Dg==" length="11161512" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.13-beta1</title>
+            <pubDate>Sat, 22 Aug 2026 18:26:19 GMT</pubDate>
+            <sparkle:version>68</sparkle:version>
+            <sparkle:shortVersionString>1.1.13-beta1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.13-beta1</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.13-beta1.dmg" sparkle:edSignature="/Y9PIK9xr3ndzQYW//GlRPPkYBAZjX/Qpea5Aa2lrIKNsVZvuGnzrMAovxQweMtF/P89jRqKq1HZIyaek+E6DQ==" length="11161579" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.12-beta2</title>
+            <pubDate>Thu, 20 Aug 2026 05:22:13 GMT</pubDate>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>1.1.12-beta2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.12-beta2</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.12-beta2.dmg" sparkle:edSignature="ENaAqhqWnhZ+IekaEQjJ9MnS/j6JDMhiXdeJqdiJ317D85YPBh2bViQgwZ5ey/RRGNEr1vz4Oa5OcnXUF8Y7CA==" length="11182050" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.12-beta1</title>
+            <pubDate>Mon, 17 Aug 2026 20:41:21 GMT</pubDate>
+            <sparkle:version>65</sparkle:version>
+            <sparkle:shortVersionString>1.1.12-beta1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.12-beta1</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.12-beta1.dmg" sparkle:edSignature="u8EI3tAqtFBqgoINczMdnc7JJw6x7djMrDLbwOn+VUds/JuBWbmADn6WGO8A27+kAKblFm9Xvb1vt2nPhRnQAg==" length="11161931" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.7-beta2</title>
+            <pubDate>Fri, 05 Jun 2026 19:35:20 GMT</pubDate>
+            <sparkle:version>59</sparkle:version>
+            <sparkle:shortVersionString>1.1.7-beta2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/Grubwire/crosswire/releases/tag/v1.1.7-beta2</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.7-beta2.dmg" sparkle:edSignature="EfIvjMBYbHkctQI8c2/9zJxDvcYDnj1sh59ERs1+Prj+vIpk3q06TnzHmLCjOqTdB4gB22BoRxdwvlBvq/jhAg==" length="14661932" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.7-beta1</title>
+            <pubDate>Fri, 05 Jun 2026 19:10:58 GMT</pubDate>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>1.1.7-beta1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/Grubwire/crosswire/releases/tag/v1.1.7-beta1</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.7-beta1.dmg" sparkle:edSignature="YuQ5I254kEF7jsTdaqdt+MrkA8SbLvoB5aFa2MjHkkPFfJlfWgYFKutfqb4EQL8JqJkzYHDrqmN3kgvcn5/tCg==" length="14661277" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.6</title>
+            <pubDate>Fri, 05 Jun 2026 07:42:43 GMT</pubDate>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>1.1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/Grubwire/crosswire/releases/tag/v1.1.6</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.6.dmg" sparkle:edSignature="8w9TVp8MvO9FE2WILbkzpvyTu1Ek9SEON+gbOizDjD4/eYVrICmdf1YEmTuXE7GHDvhYvozmeuEoB+95NL7/CA==" length="10346106" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.5</title>
+            <pubDate>Tue, 02 Jun 2026 07:15:18 GMT</pubDate>
+            <sparkle:version>56</sparkle:version>
+            <sparkle:shortVersionString>1.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/Grubwire/crosswire/releases/tag/v1.1.5</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.5.dmg" sparkle:edSignature="nWzILRapDyu3C5fGkdc9xXblBWgrh8CfcQYjOH2HXNtsXGH2XilWMW49ylWuqHTrhxxrXZ8n/2IiTkqBjiheCg==" length="10296604" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.4</title>
+            <pubDate>Tue, 02 Jun 2026 06:58:27 GMT</pubDate>
+            <sparkle:version>55</sparkle:version>
+            <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/Grubwire/crosswire/releases/tag/v1.1.4</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.4.dmg" sparkle:edSignature="MD7V7mhK3pvIhecVlR9KSTfXt4cTeFXl4AUgZ50arp/Bcc8BnRi82NFUflhzqP+CBNIBxBh5F7CSnh7J7Jg8CQ==" length="10291507" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.3</title>
+            <pubDate>Tue, 02 Jun 2026 03:50:07 GMT</pubDate>
+            <sparkle:version>54</sparkle:version>
+            <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/Grubwire/crosswire/releases/tag/v1.1.3</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.3.dmg" sparkle:edSignature="A+H+7I7B2fN1jpsTXoojh1Av+8PKymRK5NdjirViUAaMnOK/RdQmnikw1IUy6ls13l0VNO+GFcipfQQu/rKHBA==" length="6817598" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.2</title>
+            <pubDate>Tue, 26 May 2026 05:01:17 GMT</pubDate>
+            <sparkle:version>53</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.2</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.2.dmg" sparkle:edSignature="oeEkP55+nf+OPT+LtQKWaJrO0RJ6I1mnjwesx+5lpqd+xKuYg/iGEmwkzR8KTDEcN+mWZlPCUG72PQQUbaiICQ==" length="4613071" type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.1.1</title>
+            <pubDate>Tue, 26 May 2026 04:16:40 GMT</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://github.com/grubwire/crosswire/releases/tag/v1.1.1</sparkle:releaseNotesLink>
+            <enclosure url="https://download.grubwire.io/app/Crosswire-v1.1.1.dmg" sparkle:edSignature="Nc5IWw98SB+wuR1QzYwqpoWmLrcL0GglZ6zOaFp/vxpFDwkNafy4CZQaivCI8d1aUHqiZ5oVOFvLDCs6OpAPCw==" length="4609491" type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>

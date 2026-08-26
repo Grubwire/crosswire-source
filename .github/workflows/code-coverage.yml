@@ -1,0 +1,43 @@
+name: Tests
+
+concurrency:
+  group: tests-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: CrosswireKit tests + coverage
+    # The full app requires the macOS-26 SDK (self-hosted only, not exposed
+    # here). CrosswireKit is a plain SwiftPM package and tests fine on a
+    # hosted runner.
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: CrosswireKit
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+      - name: Run tests with coverage
+        run: swift test --enable-code-coverage
+      - name: Coverage report
+        run: |
+          BIN_PATH="$(swift build --show-bin-path)"
+          PROFDATA="$BIN_PATH/codecov/default.profdata"
+          XCTEST="$(find "$BIN_PATH" -name '*.xctest' -print -quit)"
+          {
+            echo '## Coverage'
+            echo '```'
+            xcrun llvm-cov report \
+              "$XCTEST/Contents/MacOS/$(basename "$XCTEST" .xctest)" \
+              -instr-profile "$PROFDATA" \
+              -ignore-filename-regex '(Tests|\.build)/'
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
